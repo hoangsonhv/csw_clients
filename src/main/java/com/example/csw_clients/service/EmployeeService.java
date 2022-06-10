@@ -8,10 +8,10 @@ import java.util.List;
 
 public interface EmployeeService {
     @GET("/api/v1/employees")
-    public Call<List<Employee>> getProducts();
+    public Call<List<Employee>> getEmployees();
 
     @GET("/api/v1/employees/{id}")
-    public Call<Employee> getProductDetail(@Path("id") int id);
+    public Call<Employee> getEmployeeDetail(@Path("id") int id);
 
     @POST("/api/v1/employees")
     public Call<Employee> save(@Body Employee obj);

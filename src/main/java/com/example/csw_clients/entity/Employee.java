@@ -1,7 +1,7 @@
 package com.example.csw_clients.entity;
 
-import com.example.csw_client.annocation.Column;
-import com.example.csw_client.annocation.Table;
+import com.example.csw_clients.annocation.Column;
+import com.example.csw_clients.annocation.Table;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

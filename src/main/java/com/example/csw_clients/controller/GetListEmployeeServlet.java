@@ -21,8 +21,9 @@ public class GetListEmployeeServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<Employee> employees = employeeService.getProducts().execute().body();
+        List<Employee> employees = employeeService.getEmployees().execute().body();
         req.setAttribute("employees", employees);
+        System.out.println(employees);
         req.getRequestDispatcher("/employee.jsp").forward(req, resp);
 
     }
